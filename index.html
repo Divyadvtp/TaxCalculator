@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div id="mainHeader">
+            <h1 id="logo">Tax Calculator</h1>
+        </div>
+    </header>
+    <main>
+        <div id="formContainer">
+            <form name="myForm" method="post" onsubmit="return calculateBtn();" action="">
+                <div class="row">
+                    <div class="col-1">
+                        <label id="nameText" class="col1Labels">Name<sup>*</sup>:
+                                
+                        </label>
+                        
+                    </div>
+                    <div class="col-2">
+                        <input id="userName" type="text" name="userName" placeholder="First Last" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label id="phoneText" class="col1Labels">Phone<sup>*</sup>: </label>
+                        
+                    </div>
+                    <div class="col-2">
+                        <input id="phoneNumber" type="text" name="phoneNumber" placeholder="123-123-1234" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label id="emailText" class="col1Labels">Email<sup>*</sup>:
+                                
+                        </label>
+                        
+                    </div>
+                    <div class="col-2">
+                        <input id="emailId" type="text" name="email" placeholder="abcd@gmail.com" >
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label id="employmentIncome" class="col1Labels">Employment Income<sup>*</sup>:
+                                
+                        </label>
+                        
+                    </div>
+                    <div class="col-2">
+                       <span>$</span><input id="empIncome" type="text" name="empIncome" >
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label id="otherIncomeText" class="col1Labels">Other Income:
+                                
+                        </label>
+                        
+                    </div>
+                    <div class="col-2">
+                       <span>$</span><input id="otherIncome" type="text" name="otherIncome" >
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label id="taxesPaidText" class="col1Labels">Income Taxes Paid<sup>*</sup>:
+                                
+                        </label>
+                        
+                    </div>
+                    <div class="col-2">
+                       <span>$</span><input id="incomeTaxesPaid" type="text" name="incomeTaxesPaid" >
+                    </div>
+
+                </div>
+                  <!-- checkout button div -->
+                  <div class="calculateBtn">
+                    <button type="submit" id="taxCalculate">Calculate</button>
+                </div>
+                <div class="allError">
+                    <p id="errors"></p>
+                </div>
+            </form>
+        </div>
+         <!-- Receipt Container -->
+         <div id="receiptContainer">
+            <!-- receipt main content with all the calculation will display in below div -->
+            <div id="receiptMainContent">
+             
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
